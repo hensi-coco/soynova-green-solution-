@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Soynova</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <!-- TODO: Replace with actual logo image -->
+          <img src="logo.png" alt="Soynova Green Solution LLP" class="logo-img" onerror="this.style.display='none'" />
+          <span class="logo-text">Soynova</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="eco-benefits.html">Eco Benefits</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="pill">Get in Touch</span>
+        <h1>We’d Love to Hear from You</h1>
+        <p>
+          Share your requirements or questions and our team will respond with
+          details on samples, pricing, and timelines.
+        </p>
+      </div>
+    </section>
+
+    <main class="page-main">
+      <div class="container">
+        <div class="two-column">
+          <section>
+            <h2>Contact Details</h2>
+            <p class="text-muted">
+              Reach out using the form or through the contact channels below.
+            </p>
+            <div class="card" style="margin-top: 1rem">
+              <div class="stack-md">
+                <div>
+                  <strong>Phone</strong>
+                  <p class="text-muted" style="margin: 0.2rem 0 0">
+                    <a href="tel:+919313872042" style="color: inherit; text-decoration: none;">+91 93138 72042</a>
+                  </p>
+                </div>
+                <div>
+                  <strong>Email</strong>
+                  <p class="text-muted" style="margin: 0.2rem 0 0">
+                    <a href="mailto:soynovallp@gmail.com" style="color: inherit; text-decoration: none;">soynovallp@gmail.com</a>
+                  </p>
+                </div>
+                <div>
+                  <strong>Location</strong>
+                  <p class="text-muted" style="margin: 0.2rem 0 0">
+                    Ahmedabad, Gujarat, India
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" class="card" novalidate>
+              <div class="form-grid">
+                <div class="form-row">
+                  <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <p class="form-footnote">
+                    Please include any details on product types, approximate quantities,
+                    and timelines.
+                  </p>
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-primary">
+                    Send Message
+                  </button>
+                  <div id="contact-status" class="form-status" aria-live="polite"></div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand">© <span id="year"></span> Soynova Green Solution LLP</p>
+          <p class="footer-sub">Sustainable plates and bowls from soybean plant waste.</p>
+        </div>
+        <div class="footer-links">
+          <a href="eco-benefits.html">Eco Benefits</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
